@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Братство Авангард</string>
+
+    <string name="main_bottom_menu_home_text">Главная</string>
+    <string name="main_bottom_menu_tasks_text">Задания</string>
+    <string name="main_bottom_menu_education_text">Обучение</string>
+    <string name="main_bottom_menu_support_text">Поддержка</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="points_earned">250/1000</string>
+    <string name="points_my">125/1000</string>
+    <string name="points_available">Доступно баллов</string>
+    <string name="all_earned">Всего заработанно</string>
+    <string name="test_time">Внимание! Тест на время</string>
+    <string name="timer">17:34</string>
+    <string name="all_spend">Всего потрачено</string>
+    <string name="do_test">Пройти тест</string>
+    <string name="history_payments">История покупок</string>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/offset_8"
+    app:cardCornerRadius="@dimen/base_card_corners_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/task_category_background_iv"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="335:165"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/task_category_title_tv"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/offset_16"
+            android:layout_marginBottom="@dimen/offset_14"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/task_category_pi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/task_category_pi"
+            android:layout_width="@dimen/task_category_item_progressindicator_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_16"
+            android:layout_marginBottom="@dimen/offset_24"
+            android:max="100"
+            app:indicatorColor="@color/base_accent_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:trackColor="@color/white_alpha_10"
+            app:trackCornerRadius="10dp"
+            app:trackThickness="@dimen/task_category_item_progressindicator_height"
+            tools:progress="75" />
+
+        <TextView
+            android:id="@+id/task_category_done_percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_8"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/task_category_pi"
+            app:layout_constraintStart_toEndOf="@id/task_category_pi"
+            app:layout_constraintTop_toTopOf="@id/task_category_pi" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

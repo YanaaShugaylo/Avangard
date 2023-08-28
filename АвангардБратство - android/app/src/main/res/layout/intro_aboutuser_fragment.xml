@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_14"
+        android:text="@string/intro_about_description_text"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_intro_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutuser_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_34"
+        android:text="@string/intro_about_inputfield_title"
+        android:textColor="@color/base_color_inputfield_title"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/description_tv"
+        app:layout_constraintTop_toBottomOf="@id/description_tv" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/aboutuser_et"
+        android:layout_width="0px"
+        android:layout_height="@dimen/intro_about_edittext_height"
+        android:layout_marginTop="@dimen/offset_8"
+        android:background="@drawable/base_inputfield_bg"
+        android:gravity="top|start"
+        android:inputType="textMultiLine|textCapSentences"
+        android:padding="@dimen/offset_14"
+        app:layout_constraintEnd_toEndOf="@id/description_tv"
+        app:layout_constraintStart_toStartOf="@id/description_tv"
+        app:layout_constraintTop_toBottomOf="@id/aboutuser_title_tv" />
+
+    <TextView
+        android:id="@+id/aboutuser_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_40"
+        android:textColor="@color/error_color"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/description_tv"
+        app:layout_constraintStart_toStartOf="@id/description_tv"
+        app:layout_constraintTop_toBottomOf="@id/aboutuser_et"
+        tools:text="Нужен контент" />
+
+    <TextView
+        android:id="@+id/about_user_hobbies_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_14"
+        android:text="@string/intro_about_hobby_title"
+        android:textColor="@color/base_color_inputfield_title"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/description_tv"
+        app:layout_constraintTop_toBottomOf="@id/aboutuser_error_tv" />
+
+    <ScrollView
+        android:id="@+id/hobbies_sv"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_8"
+        android:layout_marginBottom="@dimen/offset_16"
+        app:layout_constraintBottom_toTopOf="@id/about_user_action_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_user_hobbies_title_tv">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/hobbies_cg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_user_action_button"
+        style="@style/Button"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginBottom="@dimen/base_action_button_bottom_parent_offset"
+        android:background="@drawable/button_bordered_bg"
+        android:text="@string/intro_about_button_skip_text"
+        android:textAllCaps="false"
+        android:textColor="@color/base_button_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

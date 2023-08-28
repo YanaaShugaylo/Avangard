@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/base_card_corners_radius"
+    app:cardElevation="@dimen/base_card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/offset_16">
+
+        <ImageView
+            android:id="@+id/notification_icon_iv"
+            android:layout_width="@dimen/notification_item_icon_size"
+            android:layout_height="@dimen/notification_item_icon_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/notification_title_tv"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/notification_icon_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/notification_datetime_tv"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_button_text_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/notification_title_tv"
+            app:layout_constraintTop_toBottomOf="@id/notification_title_tv" />
+
+        <TextView
+            android:id="@+id/notification_content_tv"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notification_icon_iv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

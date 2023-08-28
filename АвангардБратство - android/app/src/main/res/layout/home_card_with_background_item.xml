@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/offset_8"
+    android:layout_marginBottom="@dimen/offset_8"
+    app:cardElevation="@dimen/base_card_elevation"
+    app:cardCornerRadius="@dimen/base_card_corners_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="0px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="#80003A8C" />
+
+        <TextView
+            android:id="@+id/card_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_16"
+            android:layout_marginTop="@dimen/offset_16"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Так держать!" />
+
+        <TextView
+            android:id="@+id/card_item_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_16"
+            android:layout_marginEnd="@dimen/offset_16"
+            android:background="@drawable/round_corners_bg_small"
+            android:backgroundTint="@color/base_inputfield_background_color"
+            android:paddingHorizontal="@dimen/offset_6"
+            android:textColor="@color/base_color_inputfield_title"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Hard skills" />
+
+        <TextView
+            android:id="@+id/card_item_subtitle_tv"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_16"
+            android:layout_marginTop="@dimen/offset_12"
+            android:layout_marginEnd="@dimen/offset_24"
+            android:layout_marginBottom="@dimen/offset_16"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/card_item_button_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_item_title_tv"
+            tools:text="Тест. Основы практики" />
+
+        <TextView
+            android:id="@+id/card_item_button_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/offset_10"
+            android:layout_marginBottom="@dimen/offset_16"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/card_item_button_iv"
+            tools:text="Пройти" />
+
+        <ImageView
+            android:id="@+id/card_item_button_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/offset_24"
+            android:layout_marginTop="@dimen/offset_2"
+            app:layout_constraintTop_toTopOf="@id/card_item_button_tv"
+            app:layout_constraintBottom_toBottomOf="@id/card_item_button_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/arrow_hook_right_icon"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/card_item_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_16"
+            android:layout_marginEnd="@dimen/offset_16"
+            android:layout_marginBottom="@dimen/offset_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

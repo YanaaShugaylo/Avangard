@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/start_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/brand_main_icon" />
+
+    <TextView
+        android:id="@+id/start_login_title_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:text="@string/start_screen_login_title"
+        android:textColor="@color/base_color_inputfield_title"
+        app:layout_constraintBottom_toTopOf="@id/start_login_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_icon_iv"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/start_login_et"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_8"
+        android:background="@drawable/base_inputfield_bg"
+        android:imeOptions="actionNext"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/offset_14"
+        android:paddingTop="@dimen/offset_8"
+        android:paddingBottom="@dimen/offset_8"
+        app:layout_constraintBottom_toTopOf="@id/start_password_title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_login_title_tv" />
+
+    <TextView
+        android:id="@+id/start_password_title_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_16"
+        android:text="@string/start_screen_password_title"
+        android:textColor="@color/base_color_inputfield_title"
+        app:layout_constraintBottom_toTopOf="@id/start_password_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_login_et" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/start_password_et"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_8"
+        android:background="@drawable/base_inputfield_bg"
+        android:imeOptions="actionDone"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/offset_14"
+        android:paddingTop="@dimen/offset_8"
+        android:paddingBottom="@dimen/offset_8"
+        app:layout_constraintBottom_toTopOf="@id/start_action_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_password_title_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_action_button"
+        style="@style/Button"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginBottom="@dimen/base_action_button_bottom_parent_offset"
+        android:text="@string/start_screen_button_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

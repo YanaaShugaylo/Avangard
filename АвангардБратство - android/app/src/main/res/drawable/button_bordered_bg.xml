@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/base_button_bg_state_common"
+        android:state_enabled="false"/>
+    <item
+        android:drawable="@drawable/button_bordered_bg_state_common"/>
+</selector>

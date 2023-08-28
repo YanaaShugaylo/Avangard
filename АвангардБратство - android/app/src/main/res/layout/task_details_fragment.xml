@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/task_details_header_cv"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        app:cardCornerRadius="@dimen/base_card_corners_radius"
+        app:layout_constraintDimensionRatio="375:225"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/task_details_header_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/task_details_title_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginBottom="@dimen/offset_16"
+        android:elevation="2dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/task_details_points_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Title of a task"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/task_details_points_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_horizontal_parent_offset"
+        android:layout_marginBottom="@dimen/offset_22"
+        android:background="@drawable/base_round_corners_bg"
+        android:backgroundTint="@color/base_accent_color"
+        android:elevation="2dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:paddingHorizontal="@dimen/offset_8"
+        android:paddingTop="@dimen/offset_2"
+        android:paddingBottom="@dimen/offset_2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/task_details_header_cv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/task_details_term_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_14"
+        android:elevation="2dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/task_details_points_tv"
+        app:layout_constraintStart_toEndOf="@id/task_details_points_tv" />
+
+    <WebView
+        android:id="@+id/task_details_content_wv"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/base_horizontal_parent_offset"
+        android:paddingTop="@dimen/offset_24"
+        android:paddingBottom="@dimen/offset_80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_details_header_cv" />
+
+    <ImageView
+        android:id="@+id/task_details_content_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_details_header_cv" />
+
+    <TextView
+        android:id="@+id/task_details_content_description_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:textAlignment="center"
+        android:textColor="@color/base_color_inputfield_title"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_details_content_iv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/task_details_action_button"
+        style="@style/Button"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginBottom="@dimen/base_action_button_bottom_parent_offset"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Отправить результат" />
+</androidx.constraintlayout.widget.ConstraintLayout>

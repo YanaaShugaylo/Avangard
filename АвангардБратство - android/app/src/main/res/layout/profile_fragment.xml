@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/profile_todata_button_background_view"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:background="@drawable/base_round_corners_bg"
+        android:elevation="@dimen/base_card_elevation"
+        app:layout_constraintBottom_toBottomOf="@id/profile_todata_offset_bottom_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_todata_offset_top_space" />
+
+    <Space
+        android:id="@+id/profile_todata_offset_top_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_14"
+        android:layout_marginTop="@dimen/offset_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_todata_button_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_18"
+        android:elevation="@dimen/base_card_elevation"
+        android:text="@string/profile_todata_button_text"
+        app:layout_constraintStart_toStartOf="@id/profile_todata_button_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_todata_offset_top_space" />
+
+    <ImageView
+        android:id="@+id/profile_todata_button_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/offset_20"
+        android:elevation="@dimen/base_card_elevation"
+        app:layout_constraintBottom_toBottomOf="@id/profile_todata_button_background_view"
+        app:layout_constraintEnd_toEndOf="@id/profile_todata_button_background_view"
+        app:layout_constraintTop_toTopOf="@id/profile_todata_button_background_view"
+        app:srcCompat="@drawable/arrow_hook_right_icon" />
+
+    <Space
+        android:id="@+id/profile_todata_offset_bottom_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_todata_button_text_tv" />
+
+    <View
+        android:id="@+id/profile_points_banner_background_view"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginStart="@dimen/base_horizontal_parent_offset"
+        android:layout_marginEnd="@dimen/offset_8"
+        android:backgroundTint="@color/extra_accent_color"
+        android:background="@drawable/base_round_corners_bg"
+        app:layout_constraintBottom_toBottomOf="@id/profile_points_banner_offset_bottom_space"
+        app:layout_constraintEnd_toStartOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_points_banner_offset_top_space" />
+
+
+    <Space
+        android:id="@+id/profile_points_banner_offset_top_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_16"
+        android:layout_marginTop="@dimen/offset_24"
+        app:layout_constraintEnd_toEndOf="@id/profile_points_banner_background_view"
+        app:layout_constraintStart_toStartOf="@id/profile_points_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_todata_button_background_view" />
+
+    <TextView
+        android:id="@+id/profile_points_banner_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_16"
+        android:text="@string/profile_rating_place_text"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/profile_points_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_points_banner_offset_top_space" />
+
+    <TextView
+        android:id="@+id/profile_points_banner_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/profile_points_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_points_banner_title_tv"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/profile_points_banner_description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_16"
+        android:layout_marginTop="@dimen/offset_8"
+        android:text="@string/profile_rating_info_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/profile_points_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_points_banner_count_tv" />
+
+    <ImageView
+        android:id="@+id/profile_points_banner_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_6"
+        android:layout_marginTop="@dimen/offset_2"
+        app:layout_constraintBottom_toBottomOf="@id/profile_points_banner_description_tv"
+        app:layout_constraintStart_toEndOf="@id/profile_points_banner_description_tv"
+        app:layout_constraintTop_toTopOf="@id/profile_points_banner_description_tv"
+        app:srcCompat="@drawable/info_icon"
+
+        app:tint="@color/white" />
+
+    <Space
+        android:id="@+id/profile_points_banner_offset_bottom_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_16"
+        app:layout_constraintEnd_toEndOf="@id/profile_points_banner_background_view"
+        app:layout_constraintStart_toStartOf="@id/profile_points_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_points_banner_description_tv" />
+
+
+
+    <View
+        android:id="@+id/profile_rating_banner_background_view"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginStart="@dimen/offset_8"
+        android:layout_marginEnd="@dimen/base_horizontal_parent_offset"
+        android:backgroundTint="@color/points_exchange_term_text_date"
+        android:background="@drawable/base_round_corners_bg"
+
+        app:layout_constraintBottom_toBottomOf="@id/profile_rating_banner_offset_bottom_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile_points_banner_background_view"
+        app:layout_constraintTop_toTopOf="@id/profile_rating_banner_offset_top_space" />
+
+    <Space
+        android:id="@+id/profile_rating_banner_offset_top_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_16"
+        android:layout_marginTop="@dimen/offset_24"
+        app:layout_constraintEnd_toEndOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintStart_toStartOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_todata_button_background_view" />
+
+    <TextView
+        android:id="@+id/profile_rating_banner_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_16"
+        android:text="@string/profile_points_text"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_rating_banner_offset_top_space" />
+
+    <TextView
+        android:id="@+id/profile_rating_banner_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_16"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_rating_banner_title_tv"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/profile_rating_banner_description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_16"
+        android:layout_marginTop="@dimen/offset_8"
+        android:text="@string/profile_points_detail_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_rating_banner_count_tv" />
+
+    <ImageView
+        android:id="@+id/profile_rating_banner_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offset_4"
+        android:layout_marginTop="@dimen/offset_4"
+        app:layout_constraintBottom_toBottomOf="@id/profile_rating_banner_description_tv"
+        app:layout_constraintStart_toEndOf="@id/profile_rating_banner_description_tv"
+        app:layout_constraintTop_toTopOf="@id/profile_rating_banner_description_tv"
+        app:tint="@color/white"
+        app:srcCompat="@drawable/arrow_hook_right_icon"
+        />
+
+    <Space
+        android:id="@+id/profile_rating_banner_offset_bottom_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_16"
+        app:layout_constraintEnd_toEndOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintStart_toStartOf="@id/profile_rating_banner_background_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_rating_banner_description_tv" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="@string/button_points_exchange_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/drawable_for_button_exchange_points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_points_banner_background_view" />
+
+    <TextView
+        android:id="@+id/profile_skills_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/profile_skills_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/profile_skills_list_button_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skills_buttonbg_left_off"
+        android:paddingHorizontal="@dimen/offset_12"
+        android:paddingTop="@dimen/offset_8"
+        android:paddingBottom="@dimen/offset_8"
+        app:layout_constraintBottom_toBottomOf="@id/profile_skills_diagram_button_iv"
+        app:layout_constraintEnd_toStartOf="@id/profile_skills_diagram_button_iv"
+        app:layout_constraintTop_toTopOf="@id/profile_skills_diagram_button_iv"
+        app:srcCompat="@drawable/skills_list_icon" />
+
+    <ImageView
+        android:id="@+id/profile_skills_diagram_button_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_horizontal_parent_offset"
+        android:background="@drawable/skills_buttonbg_right_off"
+        android:paddingBottom="@dimen/offset_2"
+        app:layout_constraintBottom_toBottomOf="@id/profile_skills_title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_skills_title_tv"
+        app:srcCompat="@drawable/skills_diagram_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_skills_list_rv"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginTop="@dimen/offset_34"
+        android:paddingHorizontal="@dimen/base_horizontal_parent_offset"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_skills_title_tv" />
+
+    <TextView
+        android:id="@+id/profile_diagram_top_lable_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/profile_skills_diagram_radar_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.avangard.bratstvo.base.ui.SpiderwebDiagramView
+        android:id="@+id/profile_skills_diagram_radar_view"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/offset_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_skills_title_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="points_exchange_title">Обмен баллов</string>
+    <string name="points_exchange_list_title">Награды</string>
+
+    <plurals name="points_exchange_points_pattern">
+        <item quantity="zero">%d баллов</item>
+        <item quantity="one">%d балл</item>
+        <item quantity="two">%d балла</item>
+        <item quantity="few">%d балла</item>
+        <item quantity="many">%d баллов</item>
+        <item quantity="other">%d баллов</item>
+    </plurals>
+    <string name="points_exchange_term_pattern">до %s</string>
+    <string name="points_exchange_multiplier_pattern">x %d</string>
+    <string name="points_exchange_action_button_pattern">Обменять на %d баллов</string>
+    <string name="points_exchange_promocodes_button_pattern">Купленные (%d)</string>
+    <string name="points_exchange_bought_text">Куплено</string>
+</resources>

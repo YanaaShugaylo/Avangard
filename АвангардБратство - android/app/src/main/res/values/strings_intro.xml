@@ -1,0 +1,13 @@
+<resources>
+    <string name="intro_about_title">Расскажи о себе</string>
+    <string name="intro_about_description_text">Расскажи о своих интересах и чем любишь заниматься в свободное время</string>
+    <string name="intro_about_hobby_title">Хобби</string>
+    <string name="intro_about_inputfield_title">Расскажи о себе в свободной форме</string>
+    <string name="intro_about_button_next_text">Продолжить</string>
+    <string name="intro_about_button_skip_text">Пропустить</string>
+
+    <string name="intro_interests_title">Интересы</string>
+    <string name="intro_interests_description_text">Укажи свои интересы, чтобы мы подобрали задания и мероприятия для тебя.</string>
+    <string name="intro_interests_button_next_text">Продолжить</string>
+    <string name="intro_interests_button_skip_text">Пропустить</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:topRightRadius="@dimen/profile_skills_button_radius"
+        android:bottomRightRadius="@dimen/profile_skills_button_radius"/>
+    <solid
+        android:color="@color/transparent" />
+    <stroke
+        android:width="@dimen/base_border_width"
+        android:color="@color/base_button_border_color"/>
+</shape>

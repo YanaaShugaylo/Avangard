@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/offset_8"
+    android:layout_marginBottom="@dimen/offset_8">
+
+    <TextView
+        android:id="@+id/profile_skill_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Физическое развитие" />
+
+    <TextView
+        android:id="@+id/profile_skill_item_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="67/100" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/profile_skill_item_count_pi"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_8"
+        app:indicatorColor="@color/extra_accent_color"
+        app:trackColor="@color/black_alpha_4"
+        app:trackCornerRadius="10dp"
+        app:trackThickness="@dimen/profile_progressindicator_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_skill_item_title_tv"
+        tools:progress="50"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

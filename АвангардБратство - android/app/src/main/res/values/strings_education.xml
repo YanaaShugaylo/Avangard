@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="education_title">Обучение</string>
+    <string name="education_details_title">Лекции</string>
+
+    <string name="test_title">Тест</string>
+
+    <string name="test_question_number_pattern">Вопрос %d/%d</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="home_title">Главная</string>
+    <string name="support_title">Чат поддержки</string>
+    <string name="detail_title">Подробнее</string>
+
+    <string name="home_points_pattern">У тебя %d баллов</string>
+    <string name="home_points_exchange_text">Обменять</string>
+    <string name="button_points_exchange_text">Обменять баллы</string>
+    <string name="home_task_points_text">+ %d баллов</string>
+
+    <string name="home_offline_text">Соединение отсутствует</string>
+</resources>

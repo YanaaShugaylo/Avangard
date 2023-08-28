@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="profile_title">Профиль</string>
+
+    <string name="profile_todata_button_text">К личным данным</string>
+    <string name="profile_points_text">Баллы</string>
+    <string name="profile_points_exchange_button_text">Обменять</string>
+    <string name="profile_points_detail_button_text">Подробнее</string>
+    <string name="profile_rating_place_text">Место в рейтигне</string>
+    <string name="profile_rating_info_button_text">Как поднять</string>
+    <string name="profile_skills_text">Навыки</string>
+
+    <string name="profile_balance_count_pattern">%d</string>
+    <string name="profile_rating_pattern">%d/%d</string>
+    <string name="profile_skill_count_pattern">%d/%d</string>
+
+    <string name="profile_personal_data_title">Личные данные</string>
+
+    <string name="profile_personal_data_birthday_title">День рождения:</string>
+    <string name="profile_personal_data_education_title">Образование:</string>
+    <string name="profile_personal_data_hobby_title">Хобби:</string>
+    <string name="profile_personal_data_interests_title">Интересы:</string>
+    <string name="profile_personal_data_logout_button_text">Выйти из аккаунта</string>
+
+    <string name="rating_info_title">Рейтинг</string>>
+    <string name="rating_info_text">Чтобы повысить рейтинг, необходимо выполнять задания и проходить обучение.\nТакже на рейтинг влияет участие в олимпиадах.</string>
+</resources>

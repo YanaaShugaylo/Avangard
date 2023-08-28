@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="offset_2">2dp</dimen>
+    <dimen name="offset_4">4dp</dimen>
+    <dimen name="offset_6">6dp</dimen>
+    <dimen name="offset_8">8dp</dimen>
+    <dimen name="offset_10">10dp</dimen>
+    <dimen name="offset_12">12dp</dimen>
+    <dimen name="offset_14">14dp</dimen>
+    <dimen name="offset_16">16dp</dimen>
+    <dimen name="offset_18">18dp</dimen>
+    <dimen name="offset_20">20dp</dimen>
+    <dimen name="offset_22">22dp</dimen>
+    <dimen name="offset_24">24dp</dimen>
+    <dimen name="offset_26">26dp</dimen>
+    <dimen name="offset_28">28dp</dimen>
+    <dimen name="offset_30">30dp</dimen>
+    <dimen name="offset_32">32dp</dimen>
+    <dimen name="offset_34">34dp</dimen>
+    <dimen name="offset_36">36dp</dimen>
+    <dimen name="offset_38">38dp</dimen>
+    <dimen name="offset_40">40dp</dimen>
+    <dimen name="offset_42">42dp</dimen>
+    <dimen name="offset_44">44dp</dimen>
+    <dimen name="offset_48">48dp</dimen>
+    <dimen name="offset_50">50dp</dimen>
+    <dimen name="offset_52">52dp</dimen>
+    <dimen name="offset_54">54dp</dimen>
+    <dimen name="offset_56">56dp</dimen>
+    <dimen name="offset_58">58dp</dimen>
+    <dimen name="offset_60">60dp</dimen>
+    <dimen name="offset_62">62dp</dimen>
+    <dimen name="offset_64">64dp</dimen>
+    <dimen name="offset_66">66dp</dimen>
+    <dimen name="offset_68">68dp</dimen>
+    <dimen name="offset_70">70dp</dimen>
+    <dimen name="offset_72">72dp</dimen>
+    <dimen name="offset_74">74dp</dimen>
+    <dimen name="offset_76">76dp</dimen>
+    <dimen name="offset_78">78dp</dimen>
+    <dimen name="offset_80">80dp</dimen>
+    <dimen name="offset_120">120dp</dimen>
+
+    <dimen name="base_card_corners_radius">8dp</dimen>
+    <dimen name="base_button_corner_radius">4dp</dimen>
+
+    <dimen name="base_horizontal_parent_offset">20dp</dimen>
+    <dimen name="base_action_button_bottom_parent_offset">64dp</dimen>
+
+    <dimen name="base_border_width">2dp</dimen>
+
+    <dimen name="default_button_minimum_size">48dp</dimen>
+</resources>

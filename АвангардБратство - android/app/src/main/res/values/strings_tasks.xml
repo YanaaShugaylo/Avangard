@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tasks_title">Задания</string>
+
+    <string name="tasks_category_percent_pattern">%d%% выполнено</string>
+    <plurals name="tasks_common_points_pattern">
+        <item quantity="zero">+%d баллов</item>
+        <item quantity="one">+%d балл</item>
+        <item quantity="two">+%d балла</item>
+        <item quantity="few">+%d балла</item>
+        <item quantity="many">+%d баллов</item>
+        <item quantity="other">+%d баллов</item>
+    </plurals>
+    <plurals name="tasks_common_days_pattern">
+        <item quantity="zero">%d дней</item>
+        <item quantity="one">%d день</item>
+        <item quantity="two">%d дня</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дней</item>
+    </plurals>
+
+    <string name="tasks_details_title">Задания</string>
+    <string name="tasks_details_action_button_not_activated">Активировать задание</string>
+    <string name="tasks_details_action_button_activated">Отправить результат</string>
+    <string name="tasks_details_action_button_answered">Отправлено</string>
+    <string name="tasks_details_action_button_approved">Принято</string>
+
+    <string name="tasks_done_title_comment">Напиши ответ</string>
+    <string name="tasks_done_title_file">Прикрепи результат</string>
+    <string name="tasks_done_title_file_and_comment">Опиши, что получилось сделать и прикрепи фото или видео</string>
+    <string name="tasks_done_input_hint_comment">Ответ</string>
+    <string name="tasks_done_input_hint_file_and_comoment">Опиши, что получилось?</string>
+    <string name="tasks_done_button_action_text">Отправить</string>
+</resources>

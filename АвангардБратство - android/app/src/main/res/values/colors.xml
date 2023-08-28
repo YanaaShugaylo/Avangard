@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_accent_color">#D5241A</color>
+    <color name="base_accent_color_40">#66D5241A</color>
+    <color name="extra_accent_color">#096DD9</color>
+    <color name="extra_color">#096DD9</color>
+
+
+
+    <color name="base_text_color">#DE000000</color>
+    <color name="base_color_inputfield_title">#61000000</color>
+    <color name="base_inputfield_background_color">#F0F1F6</color>
+    <color name="color_naturals_neutral">#F5F5F5</color>
+    <color name="base_button_border_color">#D5D5D5</color>
+    <color name="base_button_text_color">#8A000000</color>
+
+    <color name="text_color_toolbar">#41430B</color>
+
+    <color name="text_color_intro_title">#8A000000</color>
+
+    <color name="error_color">#E31B0C</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="points_exchange_details_button">#1AFFFFFF</color>
+    <color name="points_exchange_details_instruction_description">#B3FFFFFF</color>
+    <color name="points_exchange_term_background_date">#33FF9800</color>
+    <color name="points_exchange_term_text_date">#FF9800</color>
+    <color name="points_exchange_term_text_multiplier">#898989</color>
+
+    <color name="profile_chart_background">#332196F3</color>
+    <color name="profile_skills_buttons_icon_default">#B8B9C0</color>
+    <color name="profile_skills_buttons_stroke_active">#1566BD</color>
+
+    <color name="white_alpha_10">#1AFFFFFF</color>
+
+    <color name="black_alpha_4">#0A000000</color>
+    <color name="black_alpha_38">#61000000</color>
+    <color name="black_alpha_54">#8A000000</color>
+</resources>

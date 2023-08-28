@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="32dp"
+    android:viewportWidth="40"
+    android:viewportHeight="32">
+  <path
+      android:pathData="M19.8531,7.0338C19.9407,6.9701 20.0593,6.9701 20.1469,7.0338L29.433,13.7805C29.5206,13.8442 29.5573,13.957 29.5238,14.06L25.9769,24.9764C25.9434,25.0794 25.8474,25.1492 25.7391,25.1492H14.2609C14.1526,25.1492 14.0566,25.0794 14.0231,24.9764L10.4762,14.06C10.4427,13.957 10.4794,13.8442 10.567,13.7805L19.8531,7.0338L19.4122,6.4271L19.8531,7.0338Z"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/profile_skills_buttons_icon_default"/>
+</vector>

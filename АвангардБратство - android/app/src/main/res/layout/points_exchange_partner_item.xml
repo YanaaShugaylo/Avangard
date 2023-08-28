@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/base_card_corners_radius"
+    app:cardElevation="@dimen/base_card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/partner_item_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/partner_item_extra_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_10"
+            android:layout_marginEnd="@dimen/offset_10"
+            android:background="@drawable/base_inputfield_bg"
+            android:paddingHorizontal="@dimen/offset_4"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/partner_item_title_tv"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_14"
+            android:layout_marginTop="@dimen/offset_10"
+            android:layout_marginEnd="@dimen/offset_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/partner_item_icon_iv" />
+
+        <TextView
+            android:id="@+id/partner_item_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/offset_14"
+            android:layout_marginTop="@dimen/offset_6"
+            android:layout_marginBottom="@dimen/offset_18"
+            android:textColor="@color/base_color_inputfield_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/partner_item_title_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/offset_8"
+    android:background="@drawable/bg_bordered"
+    android:paddingHorizontal="@dimen/offset_16"
+    android:paddingTop="@dimen/offset_10"
+    android:paddingBottom="@dimen/offset_10"
+    android:textColor="@color/base_button_text_color" />

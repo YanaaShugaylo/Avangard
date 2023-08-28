@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="intro_about_edittext_height">100dp</dimen>
+
+    <dimen name="profile_progressindicator_height">8dp</dimen>
+
+    <dimen name="personal_data_photo_size">120dp</dimen>
+
+    <dimen name="notification_item_icon_size">34dp</dimen>
+
+    <dimen name="task_category_item_height">165dp</dimen>
+    <dimen name="task_category_item_progressindicator_width">102dp</dimen>
+    <dimen name="task_category_item_progressindicator_height">8dp</dimen>
+    <dimen name="task_item_arrow_width">8dp</dimen>
+    <dimen name="task_item_arrow_height">12dp</dimen>
+</resources>

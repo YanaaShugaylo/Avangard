@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/offset_20"
+    android:layout_marginBottom="@dimen/offset_14"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/personal_main_data_item_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/personal_main_data_item_city_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_8"
+        android:textAlignment="center"
+        android:textColor="@color/base_color_inputfield_title" />
+</LinearLayout>

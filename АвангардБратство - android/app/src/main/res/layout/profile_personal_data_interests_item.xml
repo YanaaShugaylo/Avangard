@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/offset_10"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/offset_18"
+    android:paddingBottom="@dimen/offset_18">
+
+    <TextView
+        android:id="@+id/personal_intersts_data_item_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_alpha_54" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/personal_intersts_data_item_chips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_10" />
+</LinearLayout>

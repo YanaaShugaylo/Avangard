@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/navigation_home_icon"
+        android:title="@string/main_bottom_menu_home_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/navigation_tasks_icon"
+        android:title="@string/main_bottom_menu_tasks_text"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/educationFragment"
+        android:icon="@drawable/navigation_education_icon"
+        android:title="@string/main_bottom_menu_education_text"
+        app:showAsAction="always"/>
+<!--    <item-->
+<!--        android:id="@+id/supportFragment"-->
+<!--        android:icon="@drawable/ic_support"-->
+<!--        android:title="@string/main_bottom_menu_support_text"-->
+<!--        app:showAsAction="always"/>-->
+</menu>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ImageView
+        android:id="@+id/exchange_details_background_iv"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="375:270"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/exchange_details_icon_iv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/base_horizontal_parent_offset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/exchange_details_close_button_iv"
+        android:layout_width="@dimen/default_button_minimum_size"
+        android:layout_height="@dimen/default_button_minimum_size"
+        android:layout_marginEnd="@dimen/base_horizontal_parent_offset"
+        android:padding="@dimen/offset_16"
+        app:layout_constraintBottom_toBottomOf="@id/exchange_details_icon_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/exchange_details_icon_iv"
+        app:srcCompat="@drawable/cross_icon" />
+
+    <View
+        android:id="@+id/exchange_details_background_view"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_background_iv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/exchange_details_title_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_14"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/exchange_details_background_view" />
+
+    <TextView
+        android:id="@+id/exchange_details_description_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_16"
+        android:layout_marginBottom="@dimen/offset_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_title_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exchange_details_promocodes_button"
+        style="@style/Button"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_44"
+        app:layout_constraintBottom_toTopOf="@id/exchange_details_action_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_description_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exchange_details_action_button"
+        style="@style/Button"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_14"
+        android:layout_marginBottom="@dimen/base_action_button_bottom_parent_offset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_promocodes_button" />
+
+    <ImageView
+        android:id="@+id/exchange_details_back_button_iv"
+        android:layout_width="@dimen/default_button_minimum_size"
+        android:layout_height="@dimen/default_button_minimum_size"
+        android:paddingHorizontal="@dimen/offset_20"
+        android:paddingTop="@dimen/offset_18"
+        android:paddingBottom="@dimen/offset_18"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_icon_iv"
+        app:srcCompat="@drawable/arrow_hook_left_icon"
+        app:tint="@color/base_accent_color" />
+
+    <TextView
+        android:id="@+id/exchange_details_promocodes_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/points_exchange_list_title"
+        android:textColor="@color/text_color_toolbar"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/exchange_details_back_button_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/exchange_details_back_button_iv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exchange_details_promocodes_rv"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginHorizontal="@dimen/base_horizontal_parent_offset"
+        android:layout_marginTop="@dimen/offset_24"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/offset_40"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_promocodes_count_tv" />
+
+    <ImageView
+        android:id="@+id/exhange_details_qr_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_details_promocodes_count_tv" />
+
+    <TextView
+        android:id="@+id/exchange_details_qr_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/exchange_details_back_button_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/exchange_details_back_button_iv" />
+
+    <View
+        android:id="@+id/loader_background_view"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:background="#55000000"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loader_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
